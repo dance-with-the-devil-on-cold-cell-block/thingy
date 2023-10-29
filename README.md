@@ -32,4 +32,5 @@ Hópur vinum í ibúð:
 # (Aðeins) betrumbætt wireflow
 ![Mynd](myndir/vef2_mynd2.png)
 ok þetta er aðeins betra
+
 __ATH:__ ég held að ég hafi týnt wireframe/wireflow fyrir síma en það var til og var gert (betur en þetta) og ef það finnst þá set ég það hingað inn
