@@ -21,4 +21,4 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 # Initial hugmynd
 ![Mynd](myndir/vef2_mynd1.png)
-ég skil ekkert hvað er í gangi á þessari mynd
+ég skil ~~ekkert~~ hvað er í gangi á þessari mynd
