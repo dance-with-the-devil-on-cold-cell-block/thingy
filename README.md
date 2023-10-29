@@ -6,3 +6,6 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 
 #### user stories:
+
+ég er lil piss baby og kann bara á ipad
+- búmm! ipad support
