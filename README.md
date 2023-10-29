@@ -9,3 +9,6 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 ég er lil piss baby og kann bara á ipad
 - búmm! ipad support
+
+ég er aleitt foreldri með 4 börn heima sem vantar mat
+- þau geta sett inn hvað vantar og þú getur kíkt
