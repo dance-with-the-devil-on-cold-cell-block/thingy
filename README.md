@@ -10,7 +10,7 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 Ég er einstaklingur sem notast við iPad sem helsta tæki.
 - Forritið er samhæft iPad í gegnum rwd
 
-Ég er aleitt foreldri með 4 börn heima sem vantar mat.
+Ég er foreldri með börn heima sem vantar mat.
 - Þau geta sett inn hvað vantar og þú getur kíkt.
 
 Ég er einstaklingur á elliárum og vil að aðrir meðlimir fjölskyldunnar eða vinir geti hjálpað mér með innkaup.
