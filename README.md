@@ -18,3 +18,6 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 ég spila fortnite allan daginn
 - bleyju sendingar daglega með premium subscription
+
+ég er Jan Egeland
+- 🫡 😭🏳️‍🌈👧
