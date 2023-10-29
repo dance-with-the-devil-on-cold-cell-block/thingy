@@ -29,3 +29,6 @@ Hópur vinum í ibúð:
 ![Mynd](myndir/vef2_mynd1.png)
 ég skil ~~ekkert~~ hvað er í gangi á þessari mynd
 
+# (Aðeins) betrumbætt wireflow
+![Mynd](myndir/vef2_mynd2.png)
+ok þetta er aðeins betra
