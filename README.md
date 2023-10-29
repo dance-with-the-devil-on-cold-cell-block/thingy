@@ -12,3 +12,6 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 ég er aleitt foreldri með 4 börn heima sem vantar mat
 - þau geta sett inn hvað vantar og þú getur kíkt
+
+ég er 90 ára og nenni ekki að senda á einhvern að kaupa fyrir mig
+- þetta er honestly örugglega erfiðara en samt
