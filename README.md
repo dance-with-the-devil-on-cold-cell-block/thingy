@@ -20,9 +20,11 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 - bleyju sendingar daglega með premium subscription
 
 ### User scenario:
-- Anna, þríbarnsmamma: Anna er á leiðinni heim eftir vinnu og vill kaupa matvörur. Hún opnar vefforritið, sér hvaða vörur hafa verið bættar við eða fjarlægðar af öðrum meðlimum í fjölskyldunni og getur þannig keypt það sem vantar án þess að endurtaka kaup eða gleyma eitthverju.
+Anna, þríbarnsmamma: 
+- Anna er á leiðinni heim eftir vinnu og vill kaupa matvörur. Hún opnar vefforritið, sér hvaða vörur hafa verið bættar við eða fjarlægðar af öðrum meðlimum í fjölskyldunni og getur þannig keypt það sem vantar án þess að endurtaka kaup eða gleyma eitthverju.
 
-- Hópur vinum í ibúð: Jón, Sigrún og Einar vilja halda utan um hvaða vörur vanta í sameiginlega ibúðinni. Einar er að fara í búðina, en veit ekki hvaða vörur vantar. Hann opnar forritið, sér listann og keypir það sem vantar.
+Hópur vinum í ibúð:
+- Jón, Sigrún og Einar vilja halda utan um hvaða vörur vanta í sameiginlega ibúðinni. Einar er að fara í búðina, en veit ekki hvaða vörur vantar. Hann opnar forritið, sér listann og keypir það sem vantar.
 
 
 # Initial hugmynd
