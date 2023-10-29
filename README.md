@@ -16,8 +16,6 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 ég er 90 ára og nenni ekki að senda á einhvern að kaupa fyrir mig
 - þetta er honestly örugglega erfiðara en samt
 
-ég spila fortnite allan daginn
-- bleyju sendingar __daglega__ með *premium* subscription
 
 ### User scenario:
 Anna, þríbarnsmamma: 
