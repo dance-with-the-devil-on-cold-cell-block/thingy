@@ -14,7 +14,7 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 - Þau geta sett inn hvað vantar og þú getur kíkt.
 
 Ég er einstaklingur á elliárum og vil að aðrir meðlimir fjölskyldunnar eða vinir geti hjálpað mér með innkaup.
-- Forritið er einfalt í notkun og býður upp á það að aðrir geti séð listann minn, svo þeir geti keypt það sem mér vantar.
+- Forritið er einfalt í notkun og býður upp á það að aðrir geti séð listann, svo þeir geti keypt það sem manni vantar.
 
 
 ### User scenario:
