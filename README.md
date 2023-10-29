@@ -7,14 +7,14 @@ Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, bre
 
 ### user stories:
 
-ég er lil piss baby og kann bara á ipad
-- búmm! ipad support
+Ég er einstaklingur sem notast við iPad sem helsta tæki.
+- Forritið er samhæft iPad og býður upp á skjásnúning, svo ég geti notað það með þægilega hátt.
 
-ég er aleitt foreldri með 4 börn heima sem vantar mat
-- þau geta sett inn hvað vantar og þú getur kíkt
+Ég er aleitt foreldri með 4 börn heima sem vantar mat.
+- Þau geta sett inn hvað vantar og þú getur kíkt.
 
-ég er 90 ára og nenni ekki að senda á einhvern að kaupa fyrir mig
-- þetta er honestly örugglega erfiðara en samt
+Ég er einstaklingur á elliárum og vil að aðrir meðlimir fjölskyldunnar eða vinir geti hjálpað mér með innkaup.
+- Forritið er einfalt í notkun og býður upp á það að aðrir geti séð listann minn, svo þeir geti keypt það sem mér vantar.
 
 
 ### User scenario:
