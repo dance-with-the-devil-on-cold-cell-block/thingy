@@ -5,7 +5,7 @@ Fólk upplifir oft erfiðleika með að skipuleggja sameiginlega kaupferð eða 
 Markmið okkar er Að búa til vefforrit sem auðveldar fólki að búa til, breyta og fylgjast með sameiginlegum innkaupalista milli meðlima í hóp.
 
 
-#### user stories:
+### user stories:
 
 ég er lil piss baby og kann bara á ipad
 - búmm! ipad support
