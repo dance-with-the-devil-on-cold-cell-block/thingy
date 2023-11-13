@@ -6,8 +6,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       const connection = await mysql.createConnection({
         host: 'localhost',
-        user: 'yourUsername',
-        password: 'yourPassword',
+        user: 'root',
+        password: '12345',
         database: 'pogger'
       });
   
@@ -17,4 +17,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } catch (error) {
       res.status(500).json({ message: 'Error connecting to database', error });
     }
-  }
+}
