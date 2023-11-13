@@ -1,0 +1,182 @@
+{
+"dummDataUser" : [
+    {
+        "username": "pogmaster23",
+        "email": "ploggers@gmail.hot",
+        "passwd": "ploggers1",
+        "joinDate": "2023-11-06" 
+    },
+    {
+        "username": "jon3",
+        "email": "jon3_doe@gmail.com",
+        "passwd": "jonnyDoe3",
+        "joinDate": "2023-11-05"
+    },
+    {
+        "username": "limpbizkit",
+        "email": "limp_bizkit_rocks@music.com",
+        "passwd": "rockOn2023",
+        "joinDate": "2023-10-15"
+    },
+    {
+        "username": "frikmor",
+        "email": "frik_mor22@gamefan.net",
+        "passwd": "gameMaster22",
+        "joinDate": "2023-10-10"
+    },
+    {
+        "username": "allgope",
+        "email": "all_gope@techworld.biz",
+        "passwd": "techGeek101",
+        "joinDate": "2023-09-25"
+    },
+    {
+        "username": "test",
+        "email": "test_user@testing.org",
+        "passwd": "testPass123",
+        "joinDate": "2023-09-20"
+    }
+],
+"dummylists": [
+    {
+        "itemd": "sour cream",
+        "magn": 10,
+        "genre": 3,
+        "keypt": true,
+        "userown": "test"
+    },
+    {
+        "itemd": "avocado",
+        "magn": 20,
+        "genre": 5,
+        "keypt": false,
+        "userown": "allgope"
+    },
+    {
+        "itemd": "tomato sauce",
+        "magn": 15,
+        "genre": 1,
+        "keypt": true,
+        "userown": "limpbizkit"
+    },
+    {
+        "itemd": "whole wheat bread",
+        "magn": 50,
+        "genre": 2,
+        "keypt": false,
+        "userown": "frikmor"
+    },
+    {
+        "itemd": "sour cream",
+        "magn": 30,
+        "genre": 6,
+        "keypt": true,
+        "userown": "jon3"
+    },
+    {
+        "itemd": "organic eggs",
+        "magn": 25,
+        "genre": 4,
+        "keypt": false,
+        "userown": "pogmaster23"
+    },
+    {
+        "itemd": "almond milk",
+        "magn": 5,
+        "genre": 8,
+        "keypt": true,
+        "userown": "test"
+    },
+    {
+        "itemd": "granola",
+        "magn": 45,
+        "genre": 2,
+        "keypt": false,
+        "userown": "allgope"
+    },
+    {
+        "itemd": "chicken breast",
+        "magn": 35,
+        "genre": 3,
+        "keypt": true,
+        "userown": "limpbizkit"
+    },
+    {
+        "itemd": "sour cream",
+        "magn": 40,
+        "genre": 7,
+        "keypt": false,
+        "userown": "frikmor"
+    },
+    {
+        "itemd": "spaghetti",
+        "magn": 55,
+        "genre": 1,
+        "keypt": true,
+        "userown": "jon3"
+    },
+    {
+        "itemd": "sweet potatoes",
+        "magn": 60,
+        "genre": 9,
+        "keypt": false,
+        "userown": "pogmaster23"
+    },
+    {
+        "itemd": "apples",
+        "magn": 65,
+        "genre": 5,
+        "keypt": true,
+        "userown": "test"
+    },
+    {
+        "itemd": "bananas",
+        "magn": 70,
+        "genre": 6,
+        "keypt": false,
+        "userown": "allgope"
+    },
+    {
+        "itemd": "chocolate chips",
+        "magn": 75,
+        "genre": 4,
+        "keypt": true,
+        "userown": "limpbizkit"
+    },
+    {
+        "itemd": "basil leaves",
+        "magn": 80,
+        "genre": 2,
+        "keypt": false,
+        "userown": "frikmor"
+    },
+    {
+        "itemd": "rice cakes",
+        "magn": 85,
+        "genre": 3,
+        "keypt": true,
+        "userown": "jon3"
+    },
+    {
+        "itemd": "cheddar cheese",
+        "magn": 90,
+        "genre": 5,
+        "keypt": false,
+        "userown": "pogmaster23"
+    },
+    {
+        "itemd": "green tea",
+        "magn": 95,
+        "genre": 1,
+        "keypt": true,
+        "userown": "test"
+    },
+    {
+        "itemd": "carrots",
+        "magn": 100,
+        "genre": 8,
+        "keypt": false,
+        "userown": "allgope"
+    }
+]
+}
