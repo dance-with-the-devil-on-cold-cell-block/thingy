@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { useEffect } from 'react';
 import LoginPrompt from './loginPrompt';
 
 export const metadata: Metadata = {
