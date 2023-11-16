@@ -1,5 +1,5 @@
 "use client"
-
+import { checkEmail } from "./CheckEmail";
 import { useState } from "react";
 
 export default function RegisterForm(){
@@ -9,7 +9,18 @@ export default function RegisterForm(){
     const [pw2Value, setPw2] = useState('');
     const swagform = (e:any) => {
         e.preventDefault()
-        
+        checkEmail(emailValue)
+        .then((res) => {
+            if(res === true) {
+                if(pwValue === pw2Value) {
+                    console.log("register!!!!!! yes!!!!")
+                }else {
+                    console.log("password not match error!!!! noooo!!")
+                }
+            }else {
+                console.log("email error!!!! no!!!!")
+            }
+        })
         console.log(`Nafn: ${nafnValue}
 Email: ${emailValue}
 password1: ${pwValue}
