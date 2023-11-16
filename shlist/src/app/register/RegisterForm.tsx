@@ -8,7 +8,7 @@ export default function RegisterForm(){
     const [pwValue, setPw] = useState('');
     const [pw2Value, setPw2] = useState('');
     const swagform = (e:any) => {
-        e.preventDefault()
+        e.preventDefault();
         checkEmail(emailValue)
         .then((res) => {
             if(res === true) {
