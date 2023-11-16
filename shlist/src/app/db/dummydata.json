@@ -1,182 +1,217 @@
 {
-"dummDataUser" : [
-    {
-        "username": "pogmaster23",
-        "email": "ploggers@gmail.hot",
-        "passwd": "ploggers1",
-        "joinDate": "2023-11-06" 
-    },
-    {
-        "username": "jon3",
-        "email": "jon3_doe@gmail.com",
-        "passwd": "jonnyDoe3",
-        "joinDate": "2023-11-05"
-    },
-    {
-        "username": "limpbizkit",
-        "email": "limp_bizkit_rocks@music.com",
-        "passwd": "rockOn2023",
-        "joinDate": "2023-10-15"
-    },
-    {
-        "username": "frikmor",
-        "email": "frik_mor22@gamefan.net",
-        "passwd": "gameMaster22",
-        "joinDate": "2023-10-10"
-    },
-    {
-        "username": "allgope",
-        "email": "all_gope@techworld.biz",
-        "passwd": "techGeek101",
-        "joinDate": "2023-09-25"
-    },
-    {
-        "username": "test",
-        "email": "test_user@testing.org",
-        "passwd": "testPass123",
-        "joinDate": "2023-09-20"
+    "dumdata": {
+    
+        "users":[
+        {
+            "userId": 1,
+            "firstnam": "Pog",
+            "lastname": "Master",
+            "email": "ploggers@gmail.hot",
+            "passwd": "hashed_ploggers1",
+            "joinDate": "2023-11-06"
+        },
+        {
+            "userId": 2,
+            "firstnam": "Jon",
+            "lastname": "Doe",
+            "email": "jon3_doe@gmail.com",
+            "passwd": "hashed_jonnyDoe3",
+            "joinDate": "2023-11-05"
+        },
+        {
+            "userId": 3,
+            "firstnam": "Limp",
+            "lastname": "Bizkit",
+            "email": "limp_bizkit_rocks@music.com",
+            "passwd": "hashed_rockOn2023",
+            "joinDate": "2023-10-15"
+        },
+        {
+            "userId": 4,
+            "firstnam": "Frik",
+            "lastname": "Mor",
+            "email": "frik_mor22@gamefan.net",
+            "passwd": "hashed_gameMaster22",
+            "joinDate": "2023-10-10"
+        },
+        {
+            "userId": 5,
+            "firstnam": "All",
+            "lastname": "Gope",
+            "email": "all_gope@techworld.biz",
+            "passwd": "hashed_techGeek101",
+            "joinDate": "2023-09-25"
+        },
+        {
+            "userId": 6,
+            "firstnam": "Test",
+            "lastname": "User",
+            "email": "test_user@testing.org",
+            "passwd": "hashed_testPass123",
+            "joinDate": "2023-09-20"
+        }
+    ],
+    "lists":[
+        {
+            "listId": 1,
+            "nameL": "Grocery Shopping"
+        },
+        {
+            "listId": 2,
+            "nameL": "Weekend Party Supplies"
+        },
+        {
+            "listId": 3,
+            "nameL": "Book Club Reading List"
+        },
+        {
+            "listId": 4,
+            "nameL": "Holiday Gift Ideas"
+        },
+        {
+            "listId": 5,
+            "nameL": "Work Project Materials"
+        },
+        {
+            "listId": 6,
+            "nameL": "Birthday Planning"
+        },
+        {
+            "listId": 7,
+            "nameL": "Travel Packing List"
+        },
+        {
+            "listId": 8,
+            "nameL": "Home Renovation Items"
+        },
+        {
+            "listId": 9,
+            "nameL": "Wedding Checklist"
+        },
+        {
+            "listId": 10,
+            "nameL": "Fitness Gear Shopping"
+        }
+    ],
+    "listOwners":[
+        {
+            "listId": 1,
+            "userId": 1
+        },
+        {
+            "listId": 1,
+            "userId": 2
+        },
+        {
+            "listId": 2,
+            "userId": 3
+        }
+    ],
+    "items":[
+        {
+            "itemId": 1,
+            "itemName": "Milk",
+            "count": 10
+        },
+        {
+            "itemId": 2,
+            "itemName": "Bread",
+            "count": 15
+        },
+        {
+            "itemId": 3,
+            "itemName": "Apples",
+            "count": 30
+        },
+        {
+            "itemId": 4,
+            "itemName": "Chicken",
+            "count": 20
+        },
+        {
+            "itemId": 5,
+            "itemName": "Rice",
+            "count": 25
+        },
+        {
+            "itemId": 6,
+            "itemName": "Tomatoes",
+            "count": 40
+        },
+        {
+            "itemId": 7,
+            "itemName": "Eggs",
+            "count": 50
+        },
+        {
+            "itemId": 8,
+            "itemName": "Cheese",
+            "count": 35
+        },
+        {
+            "itemId": 9,
+            "itemName": "Pasta",
+            "count": 45
+        },
+        {
+            "itemId": 10,
+            "itemName": "Cereal",
+            "count": 55
+        }
+    ],
+    "listitems":[
+        {
+            "listId": 1,
+            "itemId": 1,
+            "quantity": 2
+        },
+        {
+            "listId": 1,
+            "itemId": 2,
+            "quantity": 1
+        },
+        {
+            "listId": 2,
+            "itemId": 3,
+            "quantity": 3
+        },
+        {
+            "listId": 2,
+            "itemId": 4,
+            "quantity": 2
+        },
+        {
+            "listId": 3,
+            "itemId": 5,
+            "quantity": 1
+        },
+        {
+            "listId": 3,
+            "itemId": 6,
+            "quantity": 4
+        },
+        {
+            "listId": 4,
+            "itemId": 7,
+            "quantity": 12
+        },
+        {
+            "listId": 4,
+            "itemId": 8,
+            "quantity": 2
+        },
+        {
+            "listId": 5,
+            "itemId": 9,
+            "quantity": 3
+        },
+        {
+            "listId": 5,
+            "itemId": 10,
+            "quantity": 1
+        }
+    ]
     }
-],
-"dummylists": [
-    {
-        "itemd": "sour cream",
-        "magn": 10,
-        "genre": 3,
-        "keypt": true,
-        "userown": "test"
-    },
-    {
-        "itemd": "avocado",
-        "magn": 20,
-        "genre": 5,
-        "keypt": false,
-        "userown": "allgope"
-    },
-    {
-        "itemd": "tomato sauce",
-        "magn": 15,
-        "genre": 1,
-        "keypt": true,
-        "userown": "limpbizkit"
-    },
-    {
-        "itemd": "whole wheat bread",
-        "magn": 50,
-        "genre": 2,
-        "keypt": false,
-        "userown": "frikmor"
-    },
-    {
-        "itemd": "sour cream",
-        "magn": 30,
-        "genre": 6,
-        "keypt": true,
-        "userown": "jon3"
-    },
-    {
-        "itemd": "organic eggs",
-        "magn": 25,
-        "genre": 4,
-        "keypt": false,
-        "userown": "pogmaster23"
-    },
-    {
-        "itemd": "almond milk",
-        "magn": 5,
-        "genre": 8,
-        "keypt": true,
-        "userown": "test"
-    },
-    {
-        "itemd": "granola",
-        "magn": 45,
-        "genre": 2,
-        "keypt": false,
-        "userown": "allgope"
-    },
-    {
-        "itemd": "chicken breast",
-        "magn": 35,
-        "genre": 3,
-        "keypt": true,
-        "userown": "limpbizkit"
-    },
-    {
-        "itemd": "sour cream",
-        "magn": 40,
-        "genre": 7,
-        "keypt": false,
-        "userown": "frikmor"
-    },
-    {
-        "itemd": "spaghetti",
-        "magn": 55,
-        "genre": 1,
-        "keypt": true,
-        "userown": "jon3"
-    },
-    {
-        "itemd": "sweet potatoes",
-        "magn": 60,
-        "genre": 9,
-        "keypt": false,
-        "userown": "pogmaster23"
-    },
-    {
-        "itemd": "apples",
-        "magn": 65,
-        "genre": 5,
-        "keypt": true,
-        "userown": "test"
-    },
-    {
-        "itemd": "bananas",
-        "magn": 70,
-        "genre": 6,
-        "keypt": false,
-        "userown": "allgope"
-    },
-    {
-        "itemd": "chocolate chips",
-        "magn": 75,
-        "genre": 4,
-        "keypt": true,
-        "userown": "limpbizkit"
-    },
-    {
-        "itemd": "basil leaves",
-        "magn": 80,
-        "genre": 2,
-        "keypt": false,
-        "userown": "frikmor"
-    },
-    {
-        "itemd": "rice cakes",
-        "magn": 85,
-        "genre": 3,
-        "keypt": true,
-        "userown": "jon3"
-    },
-    {
-        "itemd": "cheddar cheese",
-        "magn": 90,
-        "genre": 5,
-        "keypt": false,
-        "userown": "pogmaster23"
-    },
-    {
-        "itemd": "green tea",
-        "magn": 95,
-        "genre": 1,
-        "keypt": true,
-        "userown": "test"
-    },
-    {
-        "itemd": "carrots",
-        "magn": 100,
-        "genre": 8,
-        "keypt": false,
-        "userown": "allgope"
     }
-]
-}
+    
+    
