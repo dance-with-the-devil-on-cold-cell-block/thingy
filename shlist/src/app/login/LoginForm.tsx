@@ -8,6 +8,11 @@ export default function LoginForm(){
     const loginCheck = (e:any) => {
         e.preventDefault();
         userCheck(emailValue, pwValue)
+        .then((res) => {
+            if(res === true) {
+                console.log("yes log in !!!")
+            }
+        })
     }
     return (<form onSubmit={loginCheck}>
         <label>Email</label>
