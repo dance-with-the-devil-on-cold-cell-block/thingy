@@ -3,7 +3,8 @@ import { checkEmail } from "./CheckEmail";
 import { useState } from "react";
 
 export default function RegisterForm(){
-    const [nafnValue, setNafn] = useState('');
+    const [firstnafnValue, setFirstnafn] = useState('');
+    const [lastnafnValue, setLastnafn] = useState('');
     const [emailValue, setEmail] = useState('');
     const [pwValue, setPw] = useState('');
     const [pw2Value, setPw2] = useState('');
@@ -27,8 +28,11 @@ password1: ${pwValue}
 password2: ${pw2Value}`)
     }
     return (<form onSubmit={swagform}>
-        <label>Nafn</label>
-        <input type="text" name="nafn" value={nafnValue} onChange={(e) => setNafn(e.target.value)} required/>
+        <label>Fornafn</label>
+        <input type="text" name="nafn" value={firstnafnValue} onChange={(e) => setFirstnafn(e.target.value)} required/>
+        <br/> <br/>
+        <label>Eftirnafn</label>
+        <input type="text" name="nafn" value={lastnafnValue} onChange={(e) => setLastnafn(e.target.value)} required/>
         <br/> <br/>
         <label>Email</label>
         <input type="email" name="email" value={emailValue} onChange={(e) => setEmail(e.target.value)} required/>
