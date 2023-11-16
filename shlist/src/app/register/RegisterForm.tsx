@@ -1,5 +1,5 @@
 "use client"
-import { checkEmail } from "./CheckEmail";
+import { checkEmail } from "./registerCommands";
 import { useState } from "react";
 
 export default function RegisterForm(){
@@ -22,10 +22,6 @@ export default function RegisterForm(){
                 console.log("email error!!!! no!!!!")
             }
         })
-        console.log(`Nafn: ${nafnValue}
-Email: ${emailValue}
-password1: ${pwValue}
-password2: ${pw2Value}`)
     }
     return (<form onSubmit={swagform}>
         <label>Fornafn</label>
