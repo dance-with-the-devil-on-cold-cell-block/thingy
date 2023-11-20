@@ -27,4 +27,11 @@ body {
 }
 input {
   color:black;
+  margin-top: 0.5em;
+  padding-left: 8px;
+  border-top: 2px #aaa solid;
+  border-radius: 4px;
+}
+label {
+  margin: 0.5em;
 }

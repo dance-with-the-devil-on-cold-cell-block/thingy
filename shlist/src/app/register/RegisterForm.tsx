@@ -22,27 +22,19 @@ export default function RegisterForm(){
                 console.log("email error!!!! no!!!!")
             }
         })
-        console.log(`Nafn: ${nafnValue}
-Email: ${emailValue}
-password1: ${pwValue}
-password2: ${pw2Value}`)
     }
-    return (<form onSubmit={swagform}>
+    return (<form className="grid grid-cols-[30%_70%] font-medium" onSubmit={swagform}>
         <label>Fornafn</label>
         <input type="text" name="nafn" value={firstnafnValue} onChange={(e) => setFirstnafn(e.target.value)} required/>
-        <br/> <br/>
         <label>Eftirnafn</label>
         <input type="text" name="nafn" value={lastnafnValue} onChange={(e) => setLastnafn(e.target.value)} required/>
-        <br/> <br/>
         <label>Email</label>
         <input type="email" name="email" value={emailValue} onChange={(e) => setEmail(e.target.value)} required/>
-        <br/> <br/>
         <label>Password</label>
         <input type="password" name="pw" value={pwValue} onChange={(e) => setPw(e.target.value)} required/>
-        <br/> <br/>
         <label>Repeat Password</label>
         <input type="password" name="pw2"  value={pw2Value} onChange={(e) => setPw2(e.target.value)} required/>
-        <br/> <br/>
-        <button type="submit">Register</button>
+
+        <button className="my-2 py-2 rounded-sm col-span-2 bg-white hover:bg-gray-200 text-black" type="submit">Register</button>
     </form>)
 }
