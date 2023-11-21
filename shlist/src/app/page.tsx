@@ -14,7 +14,7 @@ export default function Home() {
   return (<>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
-      <Lists userId="3"/>
+      <Lists userId="0"/>
     </Suspense>
     ) : (
       <LoginPrompt/>

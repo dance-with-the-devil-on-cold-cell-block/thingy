@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (<>
     <h1>Log In Now Maybe?</h1>
-    <h1>todo:: next-auth</h1>
     <LoginForm/>
     <p>Hefur ekki account? <Link href="/register">Register</Link></p>
     </>
