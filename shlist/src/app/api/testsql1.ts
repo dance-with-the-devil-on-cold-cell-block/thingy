@@ -24,11 +24,33 @@ function setUser(fn:string, ln:string, em:string, pw:string) {
     cn.query('insert into users(firstnam,lastname,email,passwd) values (?,?,?,?)',[fn,ln,em,pw])
 }
 
+
 function getUsers() {
     cn.query('select * from users;', function (_err:any, rows:any) {
     console.log(rows);
-});}
+});
+}
 
+function getPoggersfuckingdickassshitlisti() {
+    cn.query('call GetListItemsWithName();', function (_err:any, rows:any) {
+    console.log(rows);
+});
+}
+
+/*
+export async function getUsers() {
+    try {
+        const [rows] = await cn.query('SELECT * FROM users;');
+        console.log(rows); 
+    } catch (err) {
+        console.error("Error fetching users:", err);
+        //throw err; 
+    }
+}*/
+
+function updUser() {
+
+}
 
 
 cn.query('show tables from pogger;', function (_err:any, rows:any) {
@@ -38,3 +60,5 @@ cn.query('show tables from pogger;', function (_err:any, rows:any) {
 setUser('pogger','dogger','ploggsmoller@ittail.dog', 'ég232323kannekki');
 
 getUsers();
+
+getPoggersfuckingdickassshitlisti();
