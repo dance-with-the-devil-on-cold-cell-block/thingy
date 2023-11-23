@@ -6,7 +6,9 @@ const lobser = Lobster({weight: "400", subsets:["latin"]})
 export default function Navbar() {
     return (
     <>
-    <nav className={`bg-primary ${lobser.className}`}><Link href="/">Shlist</Link></nav>
+    <nav className={`w-screen bg-primary text-center p-4 text-6xl shadow ${lobser.className}`}>
+        <Link href="/">Shlist</Link>
+    </nav>
     </>
     )
 }
