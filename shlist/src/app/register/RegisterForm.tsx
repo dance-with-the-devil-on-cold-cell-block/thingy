@@ -1,5 +1,5 @@
 "use client"
-import { checkEmail } from "./CheckEmail";
+import { checkEmail } from "./registerCommands";
 import { useState } from "react";
 
 export default function RegisterForm(){
