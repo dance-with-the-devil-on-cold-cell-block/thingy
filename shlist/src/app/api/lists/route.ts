@@ -4,7 +4,7 @@ import { error } from "console";
 
 export async function GET(){
     try {
-        const [rows] = await connection.query('SELECT * FROM users;');
+        const [rows] = await connection.query('SELECT * FROM listar;');
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
             'Content-Type': 'application/json'
