@@ -8,7 +8,7 @@ export default function Listi({id, name}: {id:any, name:string}) {
     <ul>
         {dummydata.dumdata.listitems.map((hlutur) => {
             if(hlutur.listId == id){
-                return(<li>{dummydata.dumdata.items[hlutur.itemId-1].itemName}: {hlutur.quantity}</li>)
+                return(<li key={hlutur.listId}>{dummydata.dumdata.items[hlutur.itemId-1].itemName}: {hlutur.quantity}</li>)
            }
         })}
     </ul>
