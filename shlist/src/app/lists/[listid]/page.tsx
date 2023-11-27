@@ -2,6 +2,12 @@ import { notFound } from "next/navigation"
 import dummydata from "../../../../public/dummydata.json"
 import Listi from "./Listi"
 import { Metadata } from "next"
+import Image from "./opengraph-image"
+
+export const metadata: Metadata = {
+    title:"listi!",
+    description:"",
+  }
 
 export default function Page({ params }: { params: { listid: number } }) {
     const listanumer = (Number(params.listid)-1);
