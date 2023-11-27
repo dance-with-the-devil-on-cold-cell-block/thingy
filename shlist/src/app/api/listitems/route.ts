@@ -22,7 +22,7 @@ export async function GET(){
 export async function POST(req: Request){
     try {
         const data = await req.json();
-        const [rows] = await connection.query(`call getpoggered(${data.id})`);
+        const [rows] = await connection.query(`call listers(${data.id})`);
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
             'Content-Type': 'application/json'
