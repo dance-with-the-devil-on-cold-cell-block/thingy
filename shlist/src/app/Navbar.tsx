@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
     <>
     <nav className={`w-screen bg-primary text-center p-4 text-6xl shadow ${lobser.className}`}>
-        <Link href="/">Shlist</Link>
+        <Link className="text-white hover:text-white/90" href="/">Shlist</Link>
     </nav>
     </>
     )

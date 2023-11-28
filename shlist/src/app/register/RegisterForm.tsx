@@ -35,6 +35,6 @@ export default function RegisterForm(){
         <label className="col-span-2 md:col-span-1">Repeat Password</label>
         <input className="col-span-2 md:col-span-1" type="password" name="pw2"  value={pw2Value} onChange={(e) => setPw2(e.target.value)} required/>
 
-        <button className="my-2 py-2 rounded-[4px] col-span-2 bg-white hover:bg-gray-200 text-black" type="submit">Register</button>
+        <button className="my-2 py-2 rounded-[4px] col-span-2 bg-primary/80 hover:bg-primary dark:hover:bg-primary/60 text-white" type="submit">Register</button>
     </form>)
 }
