@@ -19,17 +19,20 @@ export default async function Home() {
   headers: {
     "Content-Type": 'application/json'
   },
-  body: (JSON.stringify({id:1}))
+  body: (JSON.stringify({id:2}))
 }).then((res) => listaJson = (res.json()))
-  let listarArray = await listaJson!
-  console.log(listarArray.data)
+  let listarArray = await listaJson || undefined;
+  let listsAvailable:boolean = listarArray.data[0].length != 0;
   return (<>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
-      {listarArray.data[0].map((listi:any) => {return(<>
-        <List key={listi.nameL} listId="1" listName={listi.nameL}/>
-      </>)
-      })}
+      {listsAvailable ? (
+        listarArray.data[0].map((listi:any) => {return(
+        <List key={listi.nameL} listId={listi.listId} listName={listi.nameL}/>
+      )
+      })) : (
+        <p>nopers uh uh fucko</p>
+      )}
     </Suspense>
     ) : (
       <LoginPrompt/>
