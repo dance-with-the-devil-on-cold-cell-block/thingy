@@ -15,10 +15,10 @@ export default function LoginForm(){
         })
     }
     return (<form className="grid grid-cols-[30%_70%] font-medium" onSubmit={loginCheck}>
-        <label>Email</label>
-        <input type="email" name="email" value={emailValue} onChange={(e) => setEmail(e.target.value)} required/>
-        <label>Password</label>
-        <input type="password" name="pw" value={pwValue} onChange={(e) => setPw(e.target.value)} required/>
-        <button className="my-2 py-2 rounded-[4px] col-span-2 bg-white hover:bg-gray-200 text-black" type="submit">Log In</button>
+        <label className="col-span-2 md:col-span-1">Email</label>
+        <input className="col-span-2 md:col-span-1" type="email" name="email" value={emailValue} onChange={(e) => setEmail(e.target.value)} required/>
+        <label className="col-span-2 md:col-span-1">Password</label>
+        <input className="col-span-2 md:col-span-1" type="password" name="pw" value={pwValue} onChange={(e) => setPw(e.target.value)} required/>
+        <button className="my-2 py-2 rounded-[4px] col-span-2 bg-primary/80 hover:bg-primary dark:hover:bg-primary/60 text-white" type="submit">Log In</button>
     </form>)
 }

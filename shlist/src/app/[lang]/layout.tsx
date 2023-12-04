@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title:"Shlist",
   description:"",
 }
-
 export default function RootLayout({
   children,
 }: {
