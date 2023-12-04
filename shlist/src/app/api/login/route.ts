@@ -1,10 +1,10 @@
-import  { NextApiRequest, NextApiResponse } from "next";
 import connection from "@/app/conf/db.config";
 import { error } from "console";
 
-export async function GET(){
+export async function POST(req: Request){
     try {
-        const [rows] = await connection.query('SELECT * FROM listar;');
+        const data = await req.json();
+        const [rows] = await connection.query(`call (${data.email,data.passwd})`);
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
             'Content-Type': 'application/json'
