@@ -4,7 +4,7 @@ import { error } from "console";
 
 export async function GET(){
     try {
-        const [rows] = await connection.query('SELECT * FROM listItems;');
+        const [rows] = await connection.query('SELECT * FROM items;');
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
             'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ export async function GET(){
 export async function POST(req: Request){
     try {
         const data = await req.json();
-        const [rows] = await connection.query(`call listers(${data.id})`);
+        const [rows] = await connection.query(`call libstar(${data.id})`);
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
             'Content-Type': 'application/json'
