@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 
 let isLoggedIn:boolean = true;
 
-
-
 export default async function Home() {
   var listaJson;
   await fetch("http://localhost:3000/api/listitems", {
