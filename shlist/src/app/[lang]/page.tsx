@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import LoginPrompt from './loginPrompt';
-import { List, Add{ List, AddList } } from './lists';
+import { List, AddList } from './lists';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {

@@ -13,14 +13,14 @@ export function AddList() {
             </svg>
         </div>
     </div>
-    <div onClick={(e) => {if(e.target === e.currentTarget){showModal(!modal)}}} className={`fixed w-screen h-screen ${modal ? "block" : "hidden"} top-0 bg-[#0000004b] z-50 flex justify-center items-center`}><ListModal/></div>
+    <div onClick={(e) => {if(e.target === e.currentTarget){showModal(!modal)}}} className={`fixed w-screen h-screen ${modal ? "block" : "hidden"} left-0 top-0 bg-[#0000004b] z-50 flex justify-center items-center`}><ListModal/></div>
     </>
     )
 }
 
 function ListModal() {
     return (
-        <div className="w-2/3 h-2/4 z-100 bg-white">
+        <div className="w-2/3 h-2/4 z-100 bg-white rounded-xl">
             <h1>modal!</h1>
         </div>
     )
