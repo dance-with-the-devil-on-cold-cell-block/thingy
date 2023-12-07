@@ -29,14 +29,16 @@ export default async function Home() {
   return (<>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
-      {listsAvailable ? (
-        listarArray.data[0].map((listi:any) => {return(
-        <List key={listi.nameL} listId={listi.listId} listName={listi.nameL}/>
-      ) 
-      }) ) : (
-        <p>nopers uh uh fucko</p>
-      )}
-      <AddList/>
+      <div className='mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:w-[80%]'>
+        {listsAvailable ? (
+          listarArray.data[0].map((listi:any) => {return(
+          <List key={listi.nameL} listId={listi.listId} listName={listi.nameL}/>
+        )
+        })) : (
+          <p>nopers uh uh fucko</p>
+        )}
+        <AddList/>
+      </div>
     </Suspense>
     ) : (
       <LoginPrompt/>
