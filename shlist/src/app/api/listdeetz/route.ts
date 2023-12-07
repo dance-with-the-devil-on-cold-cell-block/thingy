@@ -1,9 +1,6 @@
-import  { NextApiRequest, NextApiResponse } from "next";
 import connection from "@/app/conf/db.config";
-import { error } from "console";
 
 export async function GET(){
-    try {
         const [rows] = await connection.query('SELECT * FROM items;');
         return new Response(JSON.stringify({ data: rows }), {
           headers: {
@@ -12,15 +9,9 @@ export async function GET(){
           status: 200
         });
       }
-    catch{error}{
-        console.error('Database query failed:', error);
-        return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
-          status: 500
-        });
-    }
-}
+
+
 export async function POST(req: Request){
-    try {
         const data = await req.json();
         const [rows] = await connection.query(`call libstar(${data.id})`);
         return new Response(JSON.stringify({ data: rows }), {
@@ -29,11 +20,5 @@ export async function POST(req: Request){
           },
           status: 200
         });
-      }
-    catch{error}{
-        console.error('Database query failed:', error);
-        return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
-          status: 500
-        });
-    }
+    
 }
