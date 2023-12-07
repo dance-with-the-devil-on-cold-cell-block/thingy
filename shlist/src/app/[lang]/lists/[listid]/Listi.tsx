@@ -20,7 +20,7 @@ export default function Listi({id}: {id:number}) {
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
     return (<>
-    <h1>Shopping List Name: {data.data[0][0].nameL}</h1>
+    <h1>Shopping List Name:{console.log(data.data[0])} {data.data[0][0].nameL}</h1>
     <h2>ID: {id}</h2><br/>
     <div className="mx-auto w-[75%] xl:w-[60em] bg-primary font-medium border-2 border-black/20 rounded-md shadow-md">
         <h2 className="border-b-4 border-darkPrimary bg-primary rounded-t text-white p-2">Shopping List Items:</h2>

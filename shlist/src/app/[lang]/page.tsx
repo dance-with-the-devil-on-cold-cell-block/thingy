@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import LoginPrompt from './loginPrompt';
-import { List, AddList } from './lists';
+import { List, Add{ List, AddList } } from './lists';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 let isLoggedIn:boolean = true;
 
 export default async function Home() {
+  var listsAvailable:boolean = false;
+  var listarArray;
+  if(isLoggedIn) {
   var listaJson;
   await fetch("http://localhost:3000/api/listitems", {
   method: "POST",
@@ -19,8 +22,10 @@ export default async function Home() {
   },
   body: (JSON.stringify({id:2}))
 }).then((res) => listaJson = (res.json()))
-  let listarArray = await listaJson || undefined;
-  let listsAvailable:boolean = listarArray.data[0].length != 0;
+  listarArray = await listaJson || undefined;
+  if(listarArray != undefined) {
+  listsAvailable = listarArray.data[0].length != 0;}
+  }
   return (<>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
