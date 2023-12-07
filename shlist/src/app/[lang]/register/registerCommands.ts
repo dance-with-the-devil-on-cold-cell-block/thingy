@@ -5,3 +5,17 @@ export async function checkEmail(emil:string) {
         return true
     }
 }
+
+export async function registerUser(fname:string, lname:string, email:string, pw:string) {
+    let data = await fetch("http://localhost:3000/api/register", {
+        method:"POST",
+        body:JSON.stringify({
+            firstnam:fname,
+            lastname:lname,
+            email:email,
+            passwd:pw
+        })
+    }).then(res => res.json())
+    const userid = await data.data[0][0].userid
+    return userid
+}

@@ -11,6 +11,8 @@ export default function LoginForm(){
         .then((res) => {
             if(res === true) {
                 console.log("yes log in !!!")
+            }else {
+                console.log("no!!!")
             }
         })
     }
