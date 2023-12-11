@@ -21,7 +21,7 @@ export function AddList() {
 function ListModal() {
     return (
         <div className="w-2/3 h-2/4 z-100 bg-white rounded-xl">
-            <h1>modal!</h1>
+            <h1 className="text-black">modal!</h1>
         </div>
     )
 }
