@@ -27,7 +27,6 @@ function ListModal() {
         e.preventDefault();
         const listid = await makeList(listName)
         router.push("/lists/" + listid.data[0][0].listId)
-        console.log(listid)
     }function cancelList(e:any) {
         router.refresh();        
     }

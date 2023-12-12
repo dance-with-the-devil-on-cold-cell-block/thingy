@@ -2,6 +2,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import addAnItem from './addItem';
 import inviteUser from './inviteUser';
+import { useRouter } from 'next/navigation';
+import getList from './getList';
 
 
 const stores = [{name: "Bónus",value:"bonus"},
@@ -14,6 +16,7 @@ const stores = [{name: "Bónus",value:"bonus"},
 
 
 export default function Listi({id}: {id:number}) {
+    const router = useRouter();
     const [data, setData] = useState(null);
     const [isLoading, setLoading] = useState(true);
     const [modal, showModal] = useState(false);
@@ -22,11 +25,16 @@ export default function Listi({id}: {id:number}) {
     const [quantity, setQuant] = useState("");
     const [store, setStore] = useState("");
     const [inviteEmail, setInv] = useState("");
-    async function addItem(e:any) {
-        e.preventDefault()
-        await addAnItem(itemName, quantity, store, id)
-        .then(res => {getListshit();showModal(false);clearItems()})
-    }
+    const yo = getList(id)
+    .then(res => res.json())
+    .then((data) => {
+        setData(data)
+        setLoading(false)
+    })
+        async function addItem(e:any) {
+                    e.preventDefault()
+                    await addAnItem(itemName, quantity, store, id)
+                    .then(() => function(){getList(id),showModal(false),clearItems()})}
     function clearItems() {
         setItem("");
         setQuant("");
@@ -35,23 +43,8 @@ export default function Listi({id}: {id:number}) {
     async function addUser(e:any) {
         e.preventDefault();
         await inviteUser(inviteEmail, id);
+        router.refresh()
     }
-    function getListshit() {
-    fetch("https://shli.st/api/listdeetz", {
-        method:"POST",
-        headers: {'Content-Type': 'application/json'},
-        next: { revalidate:60 },
-        body: JSON.stringify({id: id})})
-    .then((res) => res.json())
-    .then((data) => {
-      setData(data)
-      setLoading(false)
-    })};
-    function repeatShitList() {
-        getListshit()
-        setTimeout(repeatShitList, 30000)
-    }
-    repeatShitList()
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
     return (<>
@@ -70,7 +63,7 @@ export default function Listi({id}: {id:number}) {
             <form className='w-1/4 h-2/3 bg-white text-black' onSubmit={addItem}>
                 <input placeholder="Item Name" required value={itemName} onChange={(e) => setItem(e.target.value)} ></input>
                 <select placeholder="Store" required value={store} onChange={(e) => setStore(e.target.value)} >
-                    <option value="" selected hidden disabled>Veldu búð..</option>
+                    <option value="" hidden disabled>Veldu búð..</option>
                     {stores.map((budir:any) => {
                     return <option key={budir.value} value={budir.value}>{budir.name}</option>})}
                 </select>
