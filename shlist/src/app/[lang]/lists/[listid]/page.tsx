@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation"
 import Listi from "./Listi"
 import type { Metadata, ResolvingMetadata } from 'next'
  
