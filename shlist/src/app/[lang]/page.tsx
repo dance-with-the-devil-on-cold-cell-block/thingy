@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 }).then((res) => listaJson = (res.json()))
   listarArray = await listaJson || undefined;
   if(listarArray != undefined) {
-  listsAvailable = listarArray.data[0].length != 0;}
+  listsAvailable = listarArray['data'][0]['length'] != 0;}
   }
   return (<>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
       <div className='mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:w-[80%]'>
         {listsAvailable ? (
-          listarArray.data[0].map((listi:any) => {return(
+          listarArray!.data[0].map((listi:any) => {return(
           <List key={listi.nameL} listId={listi.listId} listName={listi.nameL}/>
         )
         })) : (
