@@ -3,7 +3,6 @@ import { useState, useEffect, useCallback } from 'react';
 import addAnItem from './addItem';
 import inviteUser from './inviteUser';
 import { useRouter } from 'next/navigation';
-import getList from './getList';
 
 
 const stores = [{name: "Bónus",value:"bonus"},
@@ -25,12 +24,7 @@ export default function Listi({id}: {id:number}) {
     const [quantity, setQuant] = useState("");
     const [store, setStore] = useState("");
     const [inviteEmail, setInv] = useState("");
-    const yo = getList(id)
-    .then(res => res.json())
-    .then((data) => {
-        setData(data)
-        setLoading(false)
-    })
+    
         async function addItem(e:any) {
                     e.preventDefault()
                     await addAnItem(itemName, quantity, store, id)
@@ -39,6 +33,19 @@ export default function Listi({id}: {id:number}) {
         setItem("");
         setQuant("");
         setStore("");
+    }
+    function getList() {
+        fetch("http://localhost:3000/api/listdeetz", {
+            mode:'no-cors',
+                method:"POST",
+                headers: {'Content-Type': 'application/json'},
+                next: { revalidate:60 },})
+                .then(res => res.json())
+    .then((data) => {
+        setData(data)
+        setLoading(false)
+    })
+    
     }
     async function addUser(e:any) {
         e.preventDefault();
