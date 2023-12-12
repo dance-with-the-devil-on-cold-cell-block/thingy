@@ -37,3 +37,7 @@ __ATH:__ ég held að ég hafi týnt wireframe/wireflow fyrir síma en það var
 
 # Grundvallaratriði sett up í Figma fyrir síma
 ![Phone layout](https://github.com/dance-with-the-devil-on-cold-cell-block/thingy/assets/77833864/90400b73-0359-43fb-ba5d-2604c8a7f225)
+
+</br>
+
+# [database](literal_rusl)
