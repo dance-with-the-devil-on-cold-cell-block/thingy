@@ -28,7 +28,7 @@ export default function Listi({id}: {id:number}) {
         async function addItem(e:any) {
                     e.preventDefault()
                     await addAnItem(itemName, quantity, store, id)
-                    .then(() => function(){getList(id),showModal(false),clearItems()})}
+                    .then(() => function(){getList(),showModal(false),clearItems()})}
     function clearItems() {
         setItem("");
         setQuant("");
