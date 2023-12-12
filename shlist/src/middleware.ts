@@ -24,7 +24,7 @@ function parseLanguageHeader(header:string) {
 
 // Get the preferred locale, similar to the above or using a library
 function getLocale(request:NextRequest) {
-  let headerlocales = request.headers.get('accept-language');
+  let headerlocales = request.headers.get('accept-language')!
   let parsedlang = (parseLanguageHeader(headerlocales))
   return match(parsedlang, locales, defaultLocale)
  }
