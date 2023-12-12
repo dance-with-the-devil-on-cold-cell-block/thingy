@@ -1,4 +1,7 @@
 "use server"
+
+import { cookies } from "next/headers"
+
 export async function checkEmail(emil:string) {
     console.log(emil)
     if(/*hérna kemur fetch til að sjá hvort email sé í db núþegar*/ true) {
@@ -17,5 +20,8 @@ export async function registerUser(fname:string, lname:string, email:string, pw:
         })
     }).then(res => res.json())
     const userid = await data.data[0][0].userid
+    let expiryDate = new Date;
+    expiryDate.setDate(expiryDate.getDate() + 3)
+    cookies().set('userToken', userid, {secure:true, expires:expiryDate})
     return userid
 }
