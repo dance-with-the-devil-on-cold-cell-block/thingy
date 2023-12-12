@@ -25,3 +25,4 @@ export async function registerUser(fname:string, lname:string, email:string, pw:
     cookies().set('userToken', userid, {secure:true, expires:expiryDate})
     return userid
 }
+
