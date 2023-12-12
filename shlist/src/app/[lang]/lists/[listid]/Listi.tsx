@@ -54,17 +54,11 @@ export default function Listi({id}: {id:number}) {
     repeatShitList()
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
-<<<<<<< HEAD
-    return (<> 
-=======
     return (<>
-    <h1>Shopping List Name: {data['data'][0][0]['nameL']}</h1>
-    <h2>ID: {id}</h2><br/>
->>>>>>> 80a065d9c864ffcca7fe1732a58c06a467550eba
     <button onClick={() => showModal2(!modal2)} >Add User</button>
     <div onClick={(e) => {if(e.target === e.currentTarget){showModal2(!modal2)}}}className={`fixed w-screen h-screen ${modal2 ? "block opacity-100" : "hidden opacity-0"} left-0 top-0 bg-[#0000004b] z-50 flex justify-center items-center`}><form className='w-1/4 h-1/4 bg-white text-black' onSubmit={addUser}><input placeholder='email' value={inviteEmail} onChange={(e) => setInv(e.target.value)}></input><button>Invite</button></form></div>
     <div className="mx-auto w-[75%] xl:w-[60em] bg-primary font-medium border-2 border-black/20 rounded-md shadow-md">
-    <h2 className="border-b-4 border-darkPrimary bg-primary rounded-t text-white p-2">{data.data[0][0].nameL} Items:</h2>
+    <h2 className="border-b-4 border-darkPrimary bg-primary rounded-t text-white p-2">{data['data'][0][0]['nameL']} Items:</h2>
     <ul>
         { Boolean(data['data'][0][0]['itemsDetails']) ? (JSON.parse(data['data'][0][0]['itemsDetails']).map((hlutur:any) => {return(<li key={hlutur.id}><div className="bg-white hover:bg-white/90 text-black/90 border-b-2 border-black/20 p-2">{hlutur.name}: {hlutur.count}</div></li>)})) : <li><div className="bg-white hover:bg-white/90 text-black/90 border-b-2 border-black/20 p-2">Ekkert í lista!</div></li>}
       <li><div onClick={() => showModal(!modal)} className="rounded-b bg-white/90 hover:bg-white/80 cursor-pointer text-black/80 p-2">+ Add item</div></li>
