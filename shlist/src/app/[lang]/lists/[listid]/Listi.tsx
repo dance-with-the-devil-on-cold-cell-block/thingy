@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import addAnItem from './addItem';
 import inviteUser from './inviteUser';
+import { setFlagsFromString } from 'v8';
 
 
 const stores = [{name: "Bónus",value:"bonus"},
@@ -25,7 +26,12 @@ export default function Listi({id}: {id:number}) {
     async function addItem(e:any) {
         e.preventDefault()
         await addAnItem(itemName, quantity, store, id)
-        .then(res => {getListshit();showModal(false)})
+        .then(res => {getListshit();showModal(false);clearItems()})
+    }
+    function clearItems() {
+        setItem("");
+        setQuant("");
+        setStore("");
     }
     async function addUser(e:any) {
         e.preventDefault();
