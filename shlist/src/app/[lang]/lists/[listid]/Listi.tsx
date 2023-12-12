@@ -37,7 +37,7 @@ export default function Listi({id}: {id:number}) {
         await inviteUser(inviteEmail, id);
     }
     function getListshit() {
-    fetch("http://shli.st/api/listdeetz", {
+    fetch("https://shli.st/api/listdeetz", {
         method:"POST",
         headers: {'Content-Type': 'application/json'},
         next: { revalidate:60 },
