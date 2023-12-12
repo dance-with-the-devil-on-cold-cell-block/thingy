@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link"
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import makeList from "./makeList";
 
 export function AddList() {
     const [modal, showModal] = useState(false);
@@ -19,15 +21,25 @@ export function AddList() {
 }
 
 function ListModal() {
+    const router = useRouter();
+    const [listName, setListName] = useState("")
+    async function createList(e:any) {
+        e.preventDefault();
+        const listid = await makeList(listName)
+        router.push("/lists/" + listid.data[0][0].listId)
+        console.log(listid)
+    }function cancelList(e:any) {
+        router.refresh();        
+    }
     return (<>
         <div className="w-[48em] h-4/5 z-100 bg-white text-black rounded-xl mx-8 py-4">
-            <form className="flex flex-col mx-auto w-4/5 h-full">
+            <form className="flex flex-col mx-auto w-4/5 h-full" onSubmit={createList}>
                 <h1 className="text-center font-bold text-4xl p-5">Gera lista</h1>
                 <label className="mb-0 font-medium">Nafn lista:</label>
-                <input placeholder="JFHAGUIAOFJIUFHU"></input>
+                <input placeholder="Listanafn..." required value={listName} onChange={(e) => setListName(e.target.value)} ></input>
                 <div className="flex justify-between items-end pt-[50%]">
-                    <button className="border-gray-300 active:border-gray-400/50 active: px-6 py-3 bg-gray-200 hover:bg-gray-300/80 rounded-full text-xl font-medium shadow-md">Cancel</button>
-                    <button className="px-6 py-3 bg-primary/90 hover:bg-primary rounded-full text-white text-xl font-medium shadow-md">Confirm</button>
+                    <button className="border-gray-300 active:border-gray-400/50 active: px-6 py-3 bg-gray-200 hover:bg-gray-300/80 rounded-full text-xl font-medium shadow-md" onClick={cancelList}>Cancel</button>
+                    <button className="px-6 py-3 bg-primary/90 hover:bg-primary rounded-full text-white text-xl font-medium shadow-md" type="submit">Confirm</button>
                 </div>
             </form>
         </div>

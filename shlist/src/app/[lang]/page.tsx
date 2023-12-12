@@ -2,15 +2,17 @@ import { Metadata } from 'next'
 import LoginPrompt from './loginPrompt';
 import { List, AddList } from './lists';
 import { Suspense } from 'react';
+import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Shlist',
   description: '',
 }
 
-let isLoggedIn:boolean = true;
 
 export default async function Home() {
+  const userToken = cookies().get('userToken')?.value;
+  const isLoggedIn = Boolean(userToken);
   var listsAvailable:boolean = false;
   var listarArray;
   if(isLoggedIn) {
@@ -20,7 +22,7 @@ export default async function Home() {
   headers: {
     "Content-Type": 'application/json'
   },
-  body: (JSON.stringify({id:2}))
+  body: (JSON.stringify({id:userToken}))
 }).then((res) => listaJson = (res.json()))
   listarArray = await listaJson || undefined;
   if(listarArray != undefined) {

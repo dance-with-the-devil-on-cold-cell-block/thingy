@@ -1,8 +1,10 @@
 "use client"
 import { useState } from "react";
 import { userCheck } from "./checkLogin";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm(){
+    const router = useRouter();
     const [emailValue, setEmail] = useState('');
     const [pwValue, setPw] = useState('');
     const loginCheck = (e:any) => {
@@ -10,7 +12,7 @@ export default function LoginForm(){
         userCheck(emailValue, pwValue)
         .then((res) => {
             if(res === true) {
-                console.log("yes log in !!!")
+                router.push("/")
             }else {
                 console.log("no!!!")
             }
