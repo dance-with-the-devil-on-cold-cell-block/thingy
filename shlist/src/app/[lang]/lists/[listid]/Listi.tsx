@@ -25,8 +25,9 @@ export default function Listi({id}: {id:number}) {
     const [store, setStore] = useState("");
     const [inviteEmail, setInv] = useState("");
     function getListshit() {
-        fetch("http://localhost:3000/api/listdeetz", {
+        fetch("https://shli.st/api/listdeetz", {
             method:"POST",
+            mode:'no-cors',
             headers: {'Content-Type': 'application/json'},
             next: { revalidate:60 },
             body: JSON.stringify({id: id})})
