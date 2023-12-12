@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   listsAvailable = listarArray['data'][0]['length'] != 0;}
   }
   return (<>
+  <a href='garfieldbeanme' className='block m-auto text-9xl text-center text-[#397253]'>BEAN ME</a>
   {isLoggedIn ? (
     <Suspense fallback={<p>loading...</p>}>
       <div className='mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:w-[80%]'>
