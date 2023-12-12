@@ -24,28 +24,26 @@ export default function Listi({id}: {id:number}) {
     const [quantity, setQuant] = useState("");
     const [store, setStore] = useState("");
     const [inviteEmail, setInv] = useState("");
-    
-    async function addItem(e:any) {
-                e.preventDefault()
-                await addAnItem(itemName, quantity, store, id)
-                .then(() => function(){getList(),showModal(false),clearItems()})}
+    function getListshit() {
+        fetch("http://localhost:3000/api/listdeetz", {
+            method:"POST",
+            headers: {'Content-Type': 'application/json'},
+            next: { revalidate:60 },
+            body: JSON.stringify({id: id})})
+            .then(res => res.json())
+            .then((data) => {
+                setData(data)
+                setLoading(false)
+            })};
+        getListshit();
+        async function addItem(e:any) {
+                    e.preventDefault()
+                    await addAnItem(itemName, quantity, store, id)
+                    .then(() => function(){getListshit(),showModal(false),clearItems()})}
     function clearItems() {
         setItem("");
         setQuant("");
         setStore("");
-    }
-    function getList() {
-        fetch("http://localhost:3000/api/listdeetz", {
-            mode:'no-cors',
-                method:"POST",
-                headers: {'Content-Type': 'application/json'},
-                next: { revalidate:60 },})
-                .then(res => res.json())
-    .then((data) => {
-        setData(data)
-        setLoading(false)
-    })
-    getList()
     }
     async function addUser(e:any) {
         e.preventDefault();
