@@ -12,7 +12,7 @@ export default function LoginForm(){
         userCheck(emailValue, pwValue)
         .then((res) => {
             if(res === true) {
-                console.log("yes log in !!!")
+                router.push("/")
             }else {
                 console.log("no!!!")
             }
