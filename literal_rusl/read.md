@@ -1,0 +1,3 @@
+# NOTUÐUM STORED PROCEDURES 🦞🦞🦞🦞🦞
+
+![SP WOOOOOO](image.png)
