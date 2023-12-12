@@ -25,10 +25,10 @@ export default function Listi({id}: {id:number}) {
     const [store, setStore] = useState("");
     const [inviteEmail, setInv] = useState("");
     
-        async function addItem(e:any) {
-                    e.preventDefault()
-                    await addAnItem(itemName, quantity, store, id)
-                    .then(() => function(){getList(),showModal(false),clearItems()})}
+    async function addItem(e:any) {
+                e.preventDefault()
+                await addAnItem(itemName, quantity, store, id)
+                .then(() => function(){getList(),showModal(false),clearItems()})}
     function clearItems() {
         setItem("");
         setQuant("");
@@ -45,7 +45,7 @@ export default function Listi({id}: {id:number}) {
         setData(data)
         setLoading(false)
     })
-    
+    getList()
     }
     async function addUser(e:any) {
         e.preventDefault();
