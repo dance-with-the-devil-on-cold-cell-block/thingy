@@ -48,15 +48,11 @@ export default function Listi({id}: {id:number}) {
       setData(data)
       setLoading(false)
     })};
-    useEffect(() => {
-
-        function repeatShitList() {
-            getListshit()
-            setTimeout(repeatShitList, 30000)
-        }
-        repeatShitList()
-
-    }, [])
+    function repeatShitList() {
+        getListshit()
+        setTimeout(repeatShitList, 30000)
+    }
+    repeatShitList()
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
     return (<>

@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   description: '',
 }
 
-
-export default async function Home() {
+  export default async function Page({ params }: {params: {lang:any}}) {
   const userToken = cookies().get('userToken')?.value;
   const isLoggedIn = Boolean(userToken);
   var listsAvailable:boolean = false;
@@ -43,7 +42,7 @@ export default async function Home() {
       </div>
     </Suspense>
     ) : (
-      <LoginPrompt/>
+      <LoginPrompt lang={params.lang}/>
     )
   }
     </>

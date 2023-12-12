@@ -1,8 +1,10 @@
 "use client"
+import { useRouter } from "next/navigation";
 import { checkEmail, registerUser } from "./registerCommands";
 import { useState } from "react";
 
 export default function RegisterForm(){
+    const router = useRouter()
     const [firstnafnValue, setFirstnafn] = useState('');
     const [lastnafnValue, setLastnafn] = useState('');
     const [emailValue, setEmail] = useState('');
@@ -17,7 +19,9 @@ export default function RegisterForm(){
             if(res === true) {
                 if(pwValue === pw2Value) {
                     let userID = registerUser(firstnafnValue, lastnafnValue, emailValue, pwValue);
-                    console.log(userID)
+                    if(Boolean(userID)) {
+                        router.push("/")
+                    }
                 }else {
                     console.log("password not match error!!!! noooo!!")
                 }
