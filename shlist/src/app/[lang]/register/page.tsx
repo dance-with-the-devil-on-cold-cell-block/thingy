@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: '',
 }
 
-
 export default function Home() {
   if(Boolean(cookies().get('userToken')?.value)) {
     redirect("/")
