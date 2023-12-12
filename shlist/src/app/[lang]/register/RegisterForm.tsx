@@ -34,12 +34,15 @@ export default function RegisterForm(){
         <label className="col-span-2 md:col-span-1">Email</label>
         <input className="col-span-2 md:col-span-1" type="email" name="email" value={emailValue} onChange={(e) => setEmail(e.target.value)} required/>
         <label className="col-span-2 md:col-span-1">Password</label>
-        <input className="col-span-2 md:col-span-1" type={showPassword ? "text" : "password"} name="pw" value={pwValue} onChange={(e) => setPw(e.target.value)} required/>
-        <div className="cursor-pointer select-none" onClick={(e) => {setPasswordVisibility(!showPassword)}}>Show Password!!</div>
+        <div className="col-span-2 md:col-span-1 flex items-center">
+            <input className="w-full" type={showPassword ? "text" : "password"} name="pw" value={pwValue} onChange={(e) => setPw(e.target.value)} required/>
+            <div className="cursor-pointer select-none absolute text-black/80 ml-[335px] md:ml-[310px]" onClick={(e) => {setPasswordVisibility(!showPassword)}}>{showPassword ? 'Hide': 'Show'}</div>
+        </div>
         <label className="col-span-2 md:col-span-1">Repeat Password</label>
-        <input className="col-span-2 md:col-span-1" type={showPassword2 ? "text" : "password"} name="pw2"  value={pw2Value} onChange={(e) => setPw2(e.target.value)} required/>
-        <div className="cursor-pointer select-none" onClick={(e) => {setPasswordVisibility2(!showPassword2)}}>Show Password 2!!</div>
-
+        <div className="col-span-2 md:col-span-1 flex items-center">
+            <input className="w-full" type={showPassword2 ? "text" : "password"} name="pw2"  value={pw2Value} onChange={(e) => setPw2(e.target.value)} required/>
+            <div className="cursor-pointer select-none absolute text-black/80 ml-[335px] md:ml-[310px]" onClick={(e) => {setPasswordVisibility2(!showPassword2)}}>{showPassword2 ? 'Hide': 'Show'}</div>
+        </div>
         <button className="my-2 py-2 rounded-[4px] col-span-2 bg-primary/80 hover:bg-primary dark:hover:bg-primary/60 text-white" type="submit">Register</button>
     </form>)
 }

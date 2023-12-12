@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description: '',
 }
 
-
 export default function Home() {
   return (<>
     <div className="mx-auto w-[24em] md:w-[32em]">
