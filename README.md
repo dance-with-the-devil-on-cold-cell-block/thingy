@@ -1,4 +1,4 @@
-# shopping list or whatever
+# ~~shopping list or whatever~~ [Shlist](https://shli.st)
 
 Fólk upplifir oft erfiðleika með að skipuleggja sameiginlega kaupferð eða halda utan um hvaða vörur þurfa að kaupa í hóp, sérstaklega þegar það er dreift yfir mismunandi staði.
 
